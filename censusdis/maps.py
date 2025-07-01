@@ -65,6 +65,7 @@ class ShapeReader:
             shapefile_root.mkdir(exist_ok=True, parents=True)
         else:
             shapefile_root = Path(shapefile_root)
+            shapefile_root.mkdir(exist_ok=True, parents=True)
 
         self._shapefile_root = shapefile_root
         self._year = year
